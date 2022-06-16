@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adding a Custom Function to the Designer", "Adding a Custom Function to the Designer\Adding a Custom Function to the Designer.csproj", "{F83B927D-D624-4E63-A2D0-2BBC0214B300}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Editing a Dashboard in the Designer", "Editing a Dashboard in the Designer\Editing a Dashboard in the Designer.csproj", "{5A57AFDF-2012-43A2-938B-49A32063CFF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exporting and Printing a Dashboard from Code", "Exporting and Printing a Dashboard from Code\Exporting and Printing a Dashboard from Code.csproj", "{D0BB3D3C-C96E-4C87-9FD3-9F5F1A0333F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Registering a Data for the Dashboard", "Registering a Data for the Dashboard\Registering a Data for the Dashboard.csproj", "{BFE66E49-EEE0-4B9F-AE29-E07FAB4F2078}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Showing a Dashboard in the Viewer", "Showing a Dashboard in the Viewer\Showing a Dashboard in the Viewer.csproj", "{94DFB6A5-942F-40D4-85B7-E00BB239B7A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomFunctionsLibrary", "Adding a Custom Function to the Designer\CustomFunctionsLibrary\CustomFunctionsLibrary.csproj", "{5DD28DD7-70D6-4A2F-89A7-C7F6CF53478D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Creating Dashboard at Runtime", "Creating Dashboard at Runtime\Creating Dashboard at Runtime.csproj", "{971F153E-2250-4B8B-A314-87908A986B31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F83B927D-D624-4E63-A2D0-2BBC0214B300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F83B927D-D624-4E63-A2D0-2BBC0214B300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F83B927D-D624-4E63-A2D0-2BBC0214B300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F83B927D-D624-4E63-A2D0-2BBC0214B300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A57AFDF-2012-43A2-938B-49A32063CFF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A57AFDF-2012-43A2-938B-49A32063CFF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A57AFDF-2012-43A2-938B-49A32063CFF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A57AFDF-2012-43A2-938B-49A32063CFF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0BB3D3C-C96E-4C87-9FD3-9F5F1A0333F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0BB3D3C-C96E-4C87-9FD3-9F5F1A0333F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0BB3D3C-C96E-4C87-9FD3-9F5F1A0333F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0BB3D3C-C96E-4C87-9FD3-9F5F1A0333F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFE66E49-EEE0-4B9F-AE29-E07FAB4F2078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFE66E49-EEE0-4B9F-AE29-E07FAB4F2078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFE66E49-EEE0-4B9F-AE29-E07FAB4F2078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFE66E49-EEE0-4B9F-AE29-E07FAB4F2078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94DFB6A5-942F-40D4-85B7-E00BB239B7A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94DFB6A5-942F-40D4-85B7-E00BB239B7A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94DFB6A5-942F-40D4-85B7-E00BB239B7A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94DFB6A5-942F-40D4-85B7-E00BB239B7A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DD28DD7-70D6-4A2F-89A7-C7F6CF53478D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DD28DD7-70D6-4A2F-89A7-C7F6CF53478D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DD28DD7-70D6-4A2F-89A7-C7F6CF53478D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DD28DD7-70D6-4A2F-89A7-C7F6CF53478D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{971F153E-2250-4B8B-A314-87908A986B31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971F153E-2250-4B8B-A314-87908A986B31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971F153E-2250-4B8B-A314-87908A986B31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971F153E-2250-4B8B-A314-87908A986B31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8AA00509-ED3E-4F9E-B009-CC852D4E3D0A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="CustomFunctionsLibrary\**" />
+    <Content Remove="CustomFunctionsLibrary\**" />
+    <EmbeddedResource Remove="CustomFunctionsLibrary\**" />
+    <None Remove="CustomFunctionsLibrary\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Stimulsoft.Dashboards.Blazor" Version="2022.3.1" />
+    <PackageReference Include="Stimulsoft.Reports.Blazor" Version="2022.3.1" />
+    <PackageReference Include="Stimulsoft.Reports.Engine.Blazor" Version="2022.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include=".\CustomFunctionsLibrary\CustomFunctionsLibrary.csproj" />
+  </ItemGroup>
+</Project>

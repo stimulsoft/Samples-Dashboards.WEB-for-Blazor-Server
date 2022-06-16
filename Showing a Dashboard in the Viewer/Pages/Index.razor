@@ -1,0 +1,33 @@
+﻿@page "/"
+@using Stimulsoft.Base
+@using Stimulsoft.Report
+@using Stimulsoft.Report.Blazor
+@using Stimulsoft.Report.Web
+
+<!--Dashboard Viewer-->
+<StiBlazorViewer Report="@report" Theme="StiViewerTheme.Office2013WhiteCarmine" />
+
+@code
+{
+    // Dashboard object to use in viewer
+    private StiReport report;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        // How to activate
+        //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
+        //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
+        //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
+
+        // Init base font
+        StiFontCollection.AddFontFile("Fonts/Microsoft Sans Serif.ttf", "Segoe UI");
+
+        // Create dashboard Object
+        report = StiReport.CreateNewDashboard();
+
+        // Load dashboard
+        report.Load("Dashboards/DashboardChristmas.mrt");
+    }
+}
