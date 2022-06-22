@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Stimulsoft\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\CustomFunctionsLibrary.csproj": {}
+    "D:\\Stimulsoft\\Samples\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\CustomFunctionsLibrary.csproj": {}
   },
   "projects": {
-    "D:\\Stimulsoft\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\CustomFunctionsLibrary.csproj": {
+    "D:\\Stimulsoft\\Samples\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\CustomFunctionsLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Stimulsoft\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\CustomFunctionsLibrary.csproj",
+        "projectUniqueName": "D:\\Stimulsoft\\Samples\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\CustomFunctionsLibrary.csproj",
         "projectName": "CustomFunctionsLibrary",
-        "projectPath": "D:\\Stimulsoft\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\CustomFunctionsLibrary.csproj",
-        "packagesPath": "C:\\Users\\timak\\.nuget\\packages\\",
-        "outputPath": "D:\\Stimulsoft\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\obj\\",
+        "projectPath": "D:\\Stimulsoft\\Samples\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\CustomFunctionsLibrary.csproj",
+        "packagesPath": "C:\\Users\\computer\\.nuget\\packages\\",
+        "outputPath": "D:\\Stimulsoft\\Samples\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\timak\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\Stimulsoft\\nuget": {},
+          "D:\\Stimulsoft\\Stimulsoft.NuGet\\Test-Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,7 +47,7 @@
           "dependencies": {
             "Stimulsoft.Reports.Blazor": {
               "target": "Package",
-              "version": "[2022.2.5, )"
+              "version": "[2022.3.1, )"
             }
           },
           "imports": [
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

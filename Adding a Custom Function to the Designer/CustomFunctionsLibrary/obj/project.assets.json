@@ -393,13 +393,48 @@
           }
         }
       },
-      "Stimulsoft.Reports.Blazor/2022.2.5": {
+      "SixLabors.Fonts/1.0.0-beta17": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/SixLabors.Fonts.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.Fonts.dll": {}
+        }
+      },
+      "SixLabors.ImageSharp/2.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Text.Encoding.CodePages": "5.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {}
+        }
+      },
+      "SixLabors.ImageSharp.Drawing/1.0.0-beta14": {
+        "type": "package",
+        "dependencies": {
+          "SixLabors.Fonts": "1.0.0-beta16",
+          "SixLabors.ImageSharp": "2.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.Drawing.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.Drawing.dll": {}
+        }
+      },
+      "Stimulsoft.Reports.Blazor/2022.3.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components": "5.0.2",
           "Microsoft.AspNetCore.WebUtilities": "2.2.0",
           "Microsoft.JSInterop.WebAssembly": "5.0.2",
-          "Stimulsoft.Reports.Engine.Blazor": "[2022.2.5]",
+          "Stimulsoft.Reports.Engine.Blazor": "[2022.3.1]",
           "System.Text.Encoding.CodePages": "5.0.0"
         },
         "compile": {
@@ -415,13 +450,16 @@
           "lib/net5.0/Stimulsoft.System.Web.dll": {}
         }
       },
-      "Stimulsoft.Reports.Engine.Blazor/2022.2.5": {
+      "Stimulsoft.Reports.Engine.Blazor/2022.3.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
           "Microsoft.CodeAnalysis.CSharp": "3.8.0",
           "Microsoft.CodeAnalysis.Common": "3.8.0",
           "Microsoft.CodeAnalysis.VisualBasic": "3.8.0",
+          "SixLabors.Fonts": "1.0.0-beta17",
+          "SixLabors.ImageSharp": "2.1.2",
+          "SixLabors.ImageSharp.Drawing": "1.0.0-beta14",
           "System.CodeDom": "5.0.0",
           "System.Data.Odbc": "5.0.0",
           "System.Data.OleDb": "5.0.0",
@@ -432,6 +470,8 @@
           "lib/net5.0/Stimulsoft.Base.dll": {},
           "lib/net5.0/Stimulsoft.Blockly.dll": {},
           "lib/net5.0/Stimulsoft.Data.dll": {},
+          "lib/net5.0/Stimulsoft.Drawing.dll": {},
+          "lib/net5.0/Stimulsoft.Map.dll": {},
           "lib/net5.0/Stimulsoft.Report.Check.dll": {},
           "lib/net5.0/Stimulsoft.Report.Helper.dll": {},
           "lib/net5.0/Stimulsoft.Report.dll": {},
@@ -441,6 +481,8 @@
           "lib/net5.0/Stimulsoft.Base.dll": {},
           "lib/net5.0/Stimulsoft.Blockly.dll": {},
           "lib/net5.0/Stimulsoft.Data.dll": {},
+          "lib/net5.0/Stimulsoft.Drawing.dll": {},
+          "lib/net5.0/Stimulsoft.Map.dll": {},
           "lib/net5.0/Stimulsoft.Report.Check.dll": {},
           "lib/net5.0/Stimulsoft.Report.Helper.dll": {},
           "lib/net5.0/Stimulsoft.Report.dll": {},
@@ -623,10 +665,10 @@
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -825,7 +867,7 @@
       ]
     },
     "Microsoft.AspNetCore.WebUtilities/2.2.0": {
-      "sha512": "9ErxAAKaDzxXASB/b5uLEkLgUWv1QbeVxyJYEHQwMaxXOeFFVkQxiq8RyfVcifLU7NR0QY0p3acqx4ZpYfhHDg==",
+      "sha512": "oPl52Mxm8MTP3jHw+bQQ6UUOFYiaHDK4gU4cHGjH/yIZDn3vdPH5jV6ONZQJQJAQBqBYKZX28sH8NyYmsFRupw==",
       "type": "package",
       "path": "microsoft.aspnetcore.webutilities/2.2.0",
       "files": [
@@ -1257,7 +1299,7 @@
       ]
     },
     "Microsoft.Net.Http.Headers/2.2.0": {
-      "sha512": "iZNkjYqlo8sIOI0bQfpsSoMTmB/kyvmV2h225ihyZT33aTp48ZpF6qYnXxzSXmHt8DpBAwBTX+1s1UFLbYfZKg==",
+      "sha512": "yFn57woR2lfjUfcoqrc+F8hbmsjTLNu+14FIiGGMUTfvQtZE6xJRwFntp4oMJi99KpMHYX5MOS0mmjRSEwGtLw==",
       "type": "package",
       "path": "microsoft.net.http.headers/2.2.0",
       "files": [
@@ -1380,7 +1422,6 @@
       "path": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -1396,7 +1437,6 @@
       "path": "runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -1412,7 +1452,6 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -1422,13 +1461,74 @@
         "version.txt"
       ]
     },
-    "Stimulsoft.Reports.Blazor/2022.2.5": {
-      "sha512": "AeMwym840pBYeII7A1JMPsS014Zcnl/UoKZyuq4wBmApLbNoZoXAxIbLttJQJ6mkPZDLB6buNWg9qRTlR70ffw==",
+    "SixLabors.Fonts/1.0.0-beta17": {
+      "sha512": "qubgVovAoSR7vyv9tJ68gSzRIPWz7HBjTM9rwAaLjpcJ6T50arnX+GHAZcC0r2mVagyRMknCNda3DGoe8StUUQ==",
       "type": "package",
-      "path": "stimulsoft.reports.blazor/2022.2.5",
+      "path": "sixlabors.fonts/1.0.0-beta17",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "lib/netcoreapp3.1/SixLabors.Fonts.dll",
+        "lib/netcoreapp3.1/SixLabors.Fonts.xml",
+        "lib/netstandard2.0/SixLabors.Fonts.dll",
+        "lib/netstandard2.0/SixLabors.Fonts.xml",
+        "lib/netstandard2.1/SixLabors.Fonts.dll",
+        "lib/netstandard2.1/SixLabors.Fonts.xml",
+        "sixlabors.fonts.1.0.0-beta17.nupkg.sha512",
+        "sixlabors.fonts.128.png",
+        "sixlabors.fonts.nuspec"
+      ]
+    },
+    "SixLabors.ImageSharp/2.1.2": {
+      "sha512": "In0pC521LqJXJXZgFVHegvSzES10KkKRN31McxqA1+fKtKsNe+EShWavBFQnKRlXCdeAmfx/wDjLILbvCaq+8Q==",
+      "type": "package",
+      "path": "sixlabors.imagesharp/2.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/SixLabors.ImageSharp.dll",
+        "lib/net472/SixLabors.ImageSharp.xml",
+        "lib/netcoreapp2.1/SixLabors.ImageSharp.dll",
+        "lib/netcoreapp2.1/SixLabors.ImageSharp.xml",
+        "lib/netcoreapp3.1/SixLabors.ImageSharp.dll",
+        "lib/netcoreapp3.1/SixLabors.ImageSharp.xml",
+        "lib/netstandard2.0/SixLabors.ImageSharp.dll",
+        "lib/netstandard2.0/SixLabors.ImageSharp.xml",
+        "lib/netstandard2.1/SixLabors.ImageSharp.dll",
+        "lib/netstandard2.1/SixLabors.ImageSharp.xml",
+        "sixlabors.imagesharp.128.png",
+        "sixlabors.imagesharp.2.1.2.nupkg.sha512",
+        "sixlabors.imagesharp.nuspec"
+      ]
+    },
+    "SixLabors.ImageSharp.Drawing/1.0.0-beta14": {
+      "sha512": "2mFbk5s9iu8fWiWyhbMo8VwHst2cw8LACQe36Fn6hlXkUwCEkyGVvdcdtHPQru7ESSnziW47Lt7Jkoay55RBcQ==",
+      "type": "package",
+      "path": "sixlabors.imagesharp.drawing/1.0.0-beta14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/SixLabors.ImageSharp.Drawing.dll",
+        "lib/net472/SixLabors.ImageSharp.Drawing.xml",
+        "lib/netcoreapp2.1/SixLabors.ImageSharp.Drawing.dll",
+        "lib/netcoreapp2.1/SixLabors.ImageSharp.Drawing.xml",
+        "lib/netcoreapp3.1/SixLabors.ImageSharp.Drawing.dll",
+        "lib/netcoreapp3.1/SixLabors.ImageSharp.Drawing.xml",
+        "lib/netstandard2.0/SixLabors.ImageSharp.Drawing.dll",
+        "lib/netstandard2.0/SixLabors.ImageSharp.Drawing.xml",
+        "lib/netstandard2.1/SixLabors.ImageSharp.Drawing.dll",
+        "lib/netstandard2.1/SixLabors.ImageSharp.Drawing.xml",
+        "sixlabors.imagesharp.drawing.1.0.0-beta14.nupkg.sha512",
+        "sixlabors.imagesharp.drawing.128.png",
+        "sixlabors.imagesharp.drawing.nuspec"
+      ]
+    },
+    "Stimulsoft.Reports.Blazor/2022.3.1": {
+      "sha512": "ZP4YsX7xksrWnEXdwAgvBcVpi3vbESBH8I8tnDUytG9fypymPAMO4xyzfTK+3rzUAWsh/IQKgXq/YJLhNpD8rw==",
+      "type": "package",
+      "path": "stimulsoft.reports.blazor/2022.3.1",
+      "files": [
+        ".nupkg.metadata",
         "LICENSE.md",
         "THIRD-PARTY.md",
         "icon.png",
@@ -1444,17 +1544,16 @@
         "lib/net5.0/Stimulsoft.System.Web.dll",
         "lib/net5.0/Stimulsoft.System.Web.pdb",
         "lib/net5.0/Stimulsoft.System.Web.xml",
-        "stimulsoft.reports.blazor.2022.2.5.nupkg.sha512",
+        "stimulsoft.reports.blazor.2022.3.1.nupkg.sha512",
         "stimulsoft.reports.blazor.nuspec"
       ]
     },
-    "Stimulsoft.Reports.Engine.Blazor/2022.2.5": {
-      "sha512": "fkjSAUJSavVMEF74w9WhkZsE5Lm49z+ijacAojV3z/5wgjAh5hq2aIyDjsKKIQYi0hbtl1ccxe7ZyX0gdgKZWw==",
+    "Stimulsoft.Reports.Engine.Blazor/2022.3.1": {
+      "sha512": "QMI7gNq2byOWzEuqVNdzDZTtAl+kHVc6qmiN5UO8bHhXLuFxJ1KpnfXd9rKx8LlfFr/j25PPs0dgd7aTXjafVQ==",
       "type": "package",
-      "path": "stimulsoft.reports.engine.blazor/2022.2.5",
+      "path": "stimulsoft.reports.engine.blazor/2022.3.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "LICENSE.md",
         "THIRD-PARTY.md",
         "icon.png",
@@ -1467,6 +1566,11 @@
         "lib/net5.0/Stimulsoft.Data.dll",
         "lib/net5.0/Stimulsoft.Data.pdb",
         "lib/net5.0/Stimulsoft.Data.xml",
+        "lib/net5.0/Stimulsoft.Drawing.dll",
+        "lib/net5.0/Stimulsoft.Drawing.pdb",
+        "lib/net5.0/Stimulsoft.Map.dll",
+        "lib/net5.0/Stimulsoft.Map.pdb",
+        "lib/net5.0/Stimulsoft.Map.xml",
         "lib/net5.0/Stimulsoft.Report.Check.dll",
         "lib/net5.0/Stimulsoft.Report.Check.pdb",
         "lib/net5.0/Stimulsoft.Report.Check.xml",
@@ -1479,7 +1583,7 @@
         "lib/net5.0/Stimulsoft.System.dll",
         "lib/net5.0/Stimulsoft.System.pdb",
         "lib/net5.0/Stimulsoft.System.xml",
-        "stimulsoft.reports.engine.blazor.2022.2.5.nupkg.sha512",
+        "stimulsoft.reports.engine.blazor.2022.3.1.nupkg.sha512",
         "stimulsoft.reports.engine.blazor.nuspec"
       ]
     },
@@ -1861,18 +1965,18 @@
         "version.txt"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.7.1": {
-      "sha512": "zOHkQmzPCn5zm/BH+cxC1XbUS3P4Yoi3xzW7eRgVpDR2tPGSzyMZ17Ig1iRkfJuY0nhxkQQde8pgePNiA7z7TQ==",
+    "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+      "sha512": "ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.7.1",
+      "path": "system.runtime.compilerservices.unsafe/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net45/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net45/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
@@ -1885,7 +1989,9 @@
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -2193,28 +2299,28 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Stimulsoft.Reports.Blazor >= 2022.2.5"
+      "Stimulsoft.Reports.Blazor >= 2022.3.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\timak\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\computer\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Stimulsoft\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\CustomFunctionsLibrary.csproj",
+      "projectUniqueName": "D:\\Stimulsoft\\Samples\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\CustomFunctionsLibrary.csproj",
       "projectName": "CustomFunctionsLibrary",
-      "projectPath": "D:\\Stimulsoft\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\CustomFunctionsLibrary.csproj",
-      "packagesPath": "C:\\Users\\timak\\.nuget\\packages\\",
-      "outputPath": "D:\\Stimulsoft\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\obj\\",
+      "projectPath": "D:\\Stimulsoft\\Samples\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\CustomFunctionsLibrary.csproj",
+      "packagesPath": "C:\\Users\\computer\\.nuget\\packages\\",
+      "outputPath": "D:\\Stimulsoft\\Samples\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\timak\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2222,7 +2328,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "D:\\Stimulsoft\\nuget": {},
+        "D:\\Stimulsoft\\Stimulsoft.NuGet\\Test-Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2243,7 +2349,7 @@
         "dependencies": {
           "Stimulsoft.Reports.Blazor": {
             "target": "Package",
-            "version": "[2022.2.5, )"
+            "version": "[2022.3.1, )"
           }
         },
         "imports": [
@@ -2261,7 +2367,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
