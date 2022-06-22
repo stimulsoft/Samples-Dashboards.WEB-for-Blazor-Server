@@ -42,9 +42,6 @@
         // Load dashboard
         report.Load("Dashboards/DashboardChristmas.mrt");
 
-        // Render, w/out showing progress
-        report.Render(false);
-
         if (responseAsFile)
         {
             // Response as HMTL file
@@ -70,9 +67,6 @@
         // Load dashboard
         report.Load("Dashboards/DashboardChristmas.mrt");
 
-        // Render, w/out showing progress
-        report.Render(false);
-
         if (responseAsFile)
         {
             // Response as PDF file
@@ -96,9 +90,6 @@
 
         // Load dashboard
         report.Load("Dashboards/DashboardChristmas.mrt");
-
-        // Render, w/out showing progress
-        report.Render(false);
 
         // Print dashboard
         StiReportResponse.PrintAsPdf(report);
