@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CZDA1yKbUKPYcLP6IIsy5UoCeqkQ7AagaBCgnA8rluuqNmqVkYJEES5zjrIF6bcDTULRzx4ZVLD+MRgNz5J3Xg==",
+  "dgSpecHash": "gNsfV00hNCE+C6JnTtWTGBIyB2I4bODe4zS0bmrmVFiXZ9e+m8cMpFoysketjKwbws9Lnw3ec0Xzi8HnNL2ecg==",
   "success": true,
   "projectFilePath": "D:\\Stimulsoft\\Samples\\Samples-Dashboards-Blazor-Server\\Adding a Custom Function to the Designer\\CustomFunctionsLibrary\\CustomFunctionsLibrary.csproj",
   "expectedPackageFiles": [
@@ -31,8 +31,8 @@
     "C:\\Users\\computer\\.nuget\\packages\\sixlabors.fonts\\1.0.0-beta17\\sixlabors.fonts.1.0.0-beta17.nupkg.sha512",
     "C:\\Users\\computer\\.nuget\\packages\\sixlabors.imagesharp\\2.1.2\\sixlabors.imagesharp.2.1.2.nupkg.sha512",
     "C:\\Users\\computer\\.nuget\\packages\\sixlabors.imagesharp.drawing\\1.0.0-beta14\\sixlabors.imagesharp.drawing.1.0.0-beta14.nupkg.sha512",
-    "C:\\Users\\computer\\.nuget\\packages\\stimulsoft.reports.blazor\\2022.3.1\\stimulsoft.reports.blazor.2022.3.1.nupkg.sha512",
-    "C:\\Users\\computer\\.nuget\\packages\\stimulsoft.reports.engine.blazor\\2022.3.1\\stimulsoft.reports.engine.blazor.2022.3.1.nupkg.sha512",
+    "C:\\Users\\computer\\.nuget\\packages\\stimulsoft.reports.blazor\\2022.3.2\\stimulsoft.reports.blazor.2022.3.2.nupkg.sha512",
+    "C:\\Users\\computer\\.nuget\\packages\\stimulsoft.reports.engine.blazor\\2022.3.2\\stimulsoft.reports.engine.blazor.2022.3.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\computer\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512",
     "C:\\Users\\computer\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",

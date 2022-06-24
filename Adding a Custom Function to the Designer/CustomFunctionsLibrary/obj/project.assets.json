@@ -428,13 +428,13 @@
           "lib/netcoreapp3.1/SixLabors.ImageSharp.Drawing.dll": {}
         }
       },
-      "Stimulsoft.Reports.Blazor/2022.3.1": {
+      "Stimulsoft.Reports.Blazor/2022.3.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components": "5.0.2",
           "Microsoft.AspNetCore.WebUtilities": "2.2.0",
           "Microsoft.JSInterop.WebAssembly": "5.0.2",
-          "Stimulsoft.Reports.Engine.Blazor": "[2022.3.1]",
+          "Stimulsoft.Reports.Engine.Blazor": "[2022.3.2]",
           "System.Text.Encoding.CodePages": "5.0.0"
         },
         "compile": {
@@ -450,7 +450,7 @@
           "lib/net5.0/Stimulsoft.System.Web.dll": {}
         }
       },
-      "Stimulsoft.Reports.Engine.Blazor/2022.3.1": {
+      "Stimulsoft.Reports.Engine.Blazor/2022.3.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -1523,10 +1523,10 @@
         "sixlabors.imagesharp.drawing.nuspec"
       ]
     },
-    "Stimulsoft.Reports.Blazor/2022.3.1": {
-      "sha512": "ZP4YsX7xksrWnEXdwAgvBcVpi3vbESBH8I8tnDUytG9fypymPAMO4xyzfTK+3rzUAWsh/IQKgXq/YJLhNpD8rw==",
+    "Stimulsoft.Reports.Blazor/2022.3.2": {
+      "sha512": "+TfKiJBmZN6KUWFuDIar6SzePinbAj9VONuYwUZ9ILKzBRbSzdIR2SPUVPjR6g+K/Vk/JhG++0Lfz3oCc3z72g==",
       "type": "package",
-      "path": "stimulsoft.reports.blazor/2022.3.1",
+      "path": "stimulsoft.reports.blazor/2022.3.2",
       "files": [
         ".nupkg.metadata",
         "LICENSE.md",
@@ -1544,14 +1544,14 @@
         "lib/net5.0/Stimulsoft.System.Web.dll",
         "lib/net5.0/Stimulsoft.System.Web.pdb",
         "lib/net5.0/Stimulsoft.System.Web.xml",
-        "stimulsoft.reports.blazor.2022.3.1.nupkg.sha512",
+        "stimulsoft.reports.blazor.2022.3.2.nupkg.sha512",
         "stimulsoft.reports.blazor.nuspec"
       ]
     },
-    "Stimulsoft.Reports.Engine.Blazor/2022.3.1": {
-      "sha512": "QMI7gNq2byOWzEuqVNdzDZTtAl+kHVc6qmiN5UO8bHhXLuFxJ1KpnfXd9rKx8LlfFr/j25PPs0dgd7aTXjafVQ==",
+    "Stimulsoft.Reports.Engine.Blazor/2022.3.2": {
+      "sha512": "rh8xBQYZHf44RerIUyBQFh4bJsM0az1Oko8YflJ5s4DMZEeeZMbRyOOoDyKYs/G93L/S0G+Di4HH+yGd8XHobA==",
       "type": "package",
-      "path": "stimulsoft.reports.engine.blazor/2022.3.1",
+      "path": "stimulsoft.reports.engine.blazor/2022.3.2",
       "files": [
         ".nupkg.metadata",
         "LICENSE.md",
@@ -1583,7 +1583,7 @@
         "lib/net5.0/Stimulsoft.System.dll",
         "lib/net5.0/Stimulsoft.System.pdb",
         "lib/net5.0/Stimulsoft.System.xml",
-        "stimulsoft.reports.engine.blazor.2022.3.1.nupkg.sha512",
+        "stimulsoft.reports.engine.blazor.2022.3.2.nupkg.sha512",
         "stimulsoft.reports.engine.blazor.nuspec"
       ]
     },
@@ -2299,7 +2299,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Stimulsoft.Reports.Blazor >= 2022.3.1"
+      "Stimulsoft.Reports.Blazor >= 2022.3.2"
     ]
   },
   "packageFolders": {
@@ -2349,7 +2349,7 @@
         "dependencies": {
           "Stimulsoft.Reports.Blazor": {
             "target": "Package",
-            "version": "[2022.3.1, )"
+            "version": "[2022.3.2, )"
           }
         },
         "imports": [
