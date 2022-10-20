@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Registering a Data for the 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Showing a Dashboard in the Viewer", "Showing a Dashboard in the Viewer\Showing a Dashboard in the Viewer.csproj", "{94DFB6A5-942F-40D4-85B7-E00BB239B7A8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomFunctionsLibrary", "Adding a Custom Function to the Designer\CustomFunctionsLibrary\CustomFunctionsLibrary.csproj", "{5DD28DD7-70D6-4A2F-89A7-C7F6CF53478D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Creating Dashboard at Runtime", "Creating Dashboard at Runtime\Creating Dashboard at Runtime.csproj", "{971F153E-2250-4B8B-A314-87908A986B31}"
 EndProject
 Global
@@ -43,10 +41,6 @@ Global
 		{94DFB6A5-942F-40D4-85B7-E00BB239B7A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94DFB6A5-942F-40D4-85B7-E00BB239B7A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94DFB6A5-942F-40D4-85B7-E00BB239B7A8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5DD28DD7-70D6-4A2F-89A7-C7F6CF53478D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DD28DD7-70D6-4A2F-89A7-C7F6CF53478D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5DD28DD7-70D6-4A2F-89A7-C7F6CF53478D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5DD28DD7-70D6-4A2F-89A7-C7F6CF53478D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{971F153E-2250-4B8B-A314-87908A986B31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{971F153E-2250-4B8B-A314-87908A986B31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{971F153E-2250-4B8B-A314-87908A986B31}.Release|Any CPU.ActiveCfg = Release|Any CPU
