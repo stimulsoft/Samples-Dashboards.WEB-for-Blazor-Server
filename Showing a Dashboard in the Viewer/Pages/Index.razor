@@ -5,12 +5,12 @@
 @using Stimulsoft.Report.Web
 
 <!--Dashboard Viewer-->
-<StiBlazorViewer Report="@report" />
+<StiBlazorViewer Report="@Report" />
 
 @code
 {
-    // Dashboard object to use in viewer
-    private StiReport report;
+    // Dashboard object to use in Viewer
+    private StiReport Report;
 
     protected override void OnInitialized()
     {
@@ -22,9 +22,9 @@
         //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
 
         // Create dashboard Object
-        report = StiReport.CreateNewDashboard();
+        this.Report = StiReport.CreateNewDashboard();
 
         // Load dashboard
-        report.Load("Dashboards/DashboardChristmas.mrt");
+        this.Report.Load("Dashboards/DashboardChristmas.mrt");
     }
 }

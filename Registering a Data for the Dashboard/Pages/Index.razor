@@ -5,12 +5,12 @@
 @using Stimulsoft.Report.Web
 
 <!--Dashboard Viewer-->
-<StiBlazorViewer Report="@report" />
+<StiBlazorViewer Report="@Report" />
 
 @code
 {
-    // Dashboard object to use in viewer
-    private StiReport report;
+    // Dashboard object to use in Viewer
+    private StiReport Report;
 
     protected override void OnInitialized()
     {
@@ -22,17 +22,17 @@
         //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
 
         // Create empty dashboard object
-        report = StiReport.CreateNewDashboard();
+        this.Report = StiReport.CreateNewDashboard();
 
         // Load dashboard
-        report.Load("Dashboards/Dashboard.mrt");
+        this.Report.Load("Dashboards/Dashboard.mrt");
 
         var jsonBytes = System.IO.File.ReadAllBytes("Dashboards/Demo.json");
 
         var json = StiJsonConnector.Get();
         var dataSet = json.GetDataSet(new StiJsonOptions(jsonBytes));
 
-        report.Dictionary.Databases.Clear();
-        report.RegData("Demo", "Demo", dataSet);
+        this.Report.Dictionary.Databases.Clear();
+        this.Report.RegData("Demo", "Demo", dataSet);
     }
 }

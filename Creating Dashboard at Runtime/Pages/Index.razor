@@ -10,12 +10,12 @@
 @using System.IO
 
 <!--Dashboard Viewer-->
-<StiBlazorViewer Report="@report"/>
+<StiBlazorViewer Report="@Report"/>
 
 @code
 {
-    // Dashboard object to use in viewer
-    private StiReport report;
+    // Dashboard object to use in Viewer
+    private StiReport Report;
 
     protected override void OnInitialized()
     {
@@ -27,8 +27,8 @@
         //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
 
         // Create dashboard Object
-        report = StiReport.CreateNewDashboard();
-        var dashboard = report.Pages[0] as StiDashboard;
+        this.Report = StiReport.CreateNewDashboard();
+        var dashboard = this.Report.Pages[0] as StiDashboard;
 
         // Read data
         var dataPath = Path.Combine("Data/Demo.xml");
@@ -36,8 +36,8 @@
         data.ReadXml(dataPath);
 
         // Register data
-        report.RegData(data);
-        report.Dictionary.Synchronize();
+        this.Report.RegData(data);
+        this.Report.Dictionary.Synchronize();
 
         // Create table
         var tableElement = new StiTableElement();
@@ -75,6 +75,5 @@
 
         // Add table to dashboard
         dashboard.Components.Add(tableElement);
-
     }
 }

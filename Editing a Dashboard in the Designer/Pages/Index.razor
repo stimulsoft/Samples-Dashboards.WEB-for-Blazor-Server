@@ -6,12 +6,12 @@
 @using Stimulsoft.Dashboard
 
 <!--Dashboard Designer-->
-<StiBlazorDesigner Report="@report" />
+<StiBlazorDesigner Report="@Report" />
 
 @code
 {   
-    // Dashboard object to use in designer
-    private StiReport report;
+    // Dashboard object to use in Designer
+    private StiReport Report;
 
     protected override void OnInitialized()
     {
@@ -23,9 +23,9 @@
         //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
 
         // Create dashboard object
-        report = StiReport.CreateNewDashboard();
+        this.Report = StiReport.CreateNewDashboard();
 
         // Load dashboard
-        report.Load("Dashboards/DashboardChristmas.mrt");
+        this.Report.Load("Dashboards/DashboardChristmas.mrt");
     }
 }
