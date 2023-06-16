@@ -20,7 +20,6 @@ In order to start simply open the Visual Studio solution file in the IDE and run
 * [ASP.NET](https://github.com/stimulsoft/Samples-Dashboards.WEB-for-ASP.NET)
 * [ASP.NET MVC](https://github.com/stimulsoft/Samples-Dashboards.WEB-for-ASP.NET-MVC)
 * [ASP.NET Core](https://github.com/stimulsoft/Samples-Dashboards.WEB-for-ASP.NET-Core)
-* [Blazor Server](https://github.com/stimulsoft/Samples-Dashboards.WEB-for-Blazor-Server)
 * [Blazor WebAssembly](https://github.com/stimulsoft/Samples-Dashboards.WEB-for-Blazor-WebAssembly)
 
 ## About Stimulsoft Dashboards.BLAZOR
