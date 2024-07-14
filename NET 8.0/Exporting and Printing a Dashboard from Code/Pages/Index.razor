@@ -1,0 +1,99 @@
+﻿@page "/"
+@using Stimulsoft.Base
+@using Stimulsoft.Report
+@using Stimulsoft.Report.Blazor
+@using Stimulsoft.Report.Web
+@using Stimulsoft.Dashboard
+@inject IJSRuntime JSRuntime 
+
+<div align="center">
+    <button @onclick="ExportDashboardAsHTML">Export as HTML</button> &nbsp; <button @onclick="ExportDashboardAsPDF">Export as PDF</button> &nbsp; <button @onclick="PrintDashboard">Print</button>
+    <br /><br />
+    <input id="responseAsFile" type="checkbox" @bind="responseAsFile"><label for="responseAsFile">Response as File</label>
+    <br /><br />
+    <p>@message</p>
+</div>
+
+@code
+{
+    private bool responseAsFile;
+
+    private MarkupString message;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        // How to activate
+        //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
+        //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
+        //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
+
+        // Initialize JSRuntime service, only needed for response as file
+        StiBlazorHelper.Initialize(JSRuntime);
+    
+    }
+
+    private void ExportDashboardAsHTML()
+    {
+        // Create empty dashboard object
+        var report = StiReport.CreateNewDashboard();
+
+        // Load dashboard
+        report.Load("Dashboards/DashboardChristmas.mrt");
+
+        if (responseAsFile)
+        {
+            // Response as HMTL file
+            StiReportResponse.ResponseAsHtml(report);
+
+            message = new MarkupString("Export to HTML is completed.");
+        }
+        else
+        {
+            // Export to HTML file
+            var _exportFilePath = $"Dashboards/ChristmasDashboard_{DateTime.Now.ToString("yyyy-dd-MM_HH-mm-ss")}.html";
+            report.ExportDocument(Stimulsoft.Report.StiExportFormat.Html, _exportFilePath);
+
+            message = new MarkupString("The exported dashboard is saved to a file: <br />" + _exportFilePath);
+        }
+    }
+
+    private void ExportDashboardAsPDF()
+    {
+        // Create empty dashboard object
+        var report = StiReport.CreateNewDashboard();
+
+        // Load dashboard
+        report.Load("Dashboards/DashboardChristmas.mrt");
+
+        if (responseAsFile)
+        {
+            // Response as PDF file
+            StiReportResponse.ResponseAsPdf(report);
+
+            message = new MarkupString("Export to PDF is completed.");
+        }
+        else
+        {
+            // Export to PDF file
+            var _exportFilePath = $"Dashboards/ChristmasDashboard_{DateTime.Now.ToString("yyyy-dd-MM_HH-mm-ss")}.pdf";
+            report.ExportDocument(Stimulsoft.Report.StiExportFormat.Pdf, _exportFilePath);
+
+            message = new MarkupString("The exported dashboard is saved to a file: <br />" + _exportFilePath);
+        }
+    }
+    private void PrintDashboard()
+    {
+        // Create empty dashboard object
+        var report = StiReport.CreateNewDashboard();
+
+        // Load dashboard
+        report.Load("Dashboards/DashboardChristmas.mrt");
+
+        // Print dashboard
+        StiReportResponse.PrintAsPdf(report);
+
+        message = new MarkupString("The dashboard printed");
+    }
+}

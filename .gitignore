@@ -1,10 +1,10 @@
 # Folders
-.vs/
-/packages/
+/*/.vs/
 /*/packages/
-/*/bin/
-/*/obj/
-/*/node_modules/
+/*/*/packages/
+/*/*/bin/
+/*/*/obj/
+/*/*/node_modules/
 
 # Files
 *.user

@@ -1,0 +1,31 @@
+﻿@page "/"
+@using Stimulsoft.Base
+@using Stimulsoft.Report
+@using Stimulsoft.Report.Blazor
+@using Stimulsoft.Report.Web
+@using Stimulsoft.Dashboard
+
+<!--Dashboard Designer-->
+<StiBlazorDesigner Report="@Report" />
+
+@code
+{   
+    // Dashboard object to use in Designer
+    private StiReport Report;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        // How to activate
+        //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
+        //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
+        //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
+
+        // Create dashboard object
+        this.Report = StiReport.CreateNewDashboard();
+
+        // Load dashboard
+        this.Report.Load("Dashboards/DashboardChristmas.mrt");
+    }
+}

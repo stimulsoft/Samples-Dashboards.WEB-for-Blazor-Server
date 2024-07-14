@@ -1,0 +1,79 @@
+﻿@page "/"
+@using Stimulsoft.Base
+@using Stimulsoft.Report
+@using Stimulsoft.Report.Blazor
+@using Stimulsoft.Report.Web
+@using Stimulsoft.Dashboard.Components
+@using Stimulsoft.Dashboard.Components.Table
+@using Stimulsoft.Data.Engine
+@using System.Data
+@using System.IO
+
+<!--Dashboard Viewer-->
+<StiBlazorViewer Report="@Report"/>
+
+@code
+{
+    // Dashboard object to use in Viewer
+    private StiReport Report;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        // How to activate
+        //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
+        //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
+        //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
+
+        // Create dashboard Object
+        this.Report = StiReport.CreateNewDashboard();
+        var dashboard = this.Report.Pages[0] as StiDashboard;
+
+        // Read data
+        var dataPath = Path.Combine("Data/Demo.xml");
+        var data = new DataSet();
+        data.ReadXml(dataPath);
+
+        // Register data
+        this.Report.RegData(data);
+        this.Report.Dictionary.Synchronize();
+
+        // Create table
+        var tableElement = new StiTableElement();
+        tableElement.Left = 0;
+        tableElement.Top = 0;
+        tableElement.Width = 700;
+        tableElement.Height = 500;
+        tableElement.Name = "Example";
+
+        // Fill table
+        var dataBase = new StiDimensionColumn();
+        dataBase.Expression = "Products.ProductID";
+        tableElement.Columns.Add(dataBase);
+
+        var dataBase1 = new StiDimensionColumn();
+        dataBase1.Expression = "Products.ProductName";
+        tableElement.Columns.Add(dataBase1);
+
+        var dataBase2 = new StiDimensionColumn();
+        dataBase2.Expression = "Products.UnitPrice";
+        tableElement.Columns.Add(dataBase2);
+
+        // Apply filters
+        var filter1 = new StiDataFilterRule();
+        filter1.Condition = StiDataFilterCondition.BeginningWith;
+        filter1.Path = "Products.ProductID";
+        filter1.Value = "1";
+        tableElement.DataFilters.Add(filter1);
+
+        var filter2 = new StiDataFilterRule();
+        filter2.Condition = StiDataFilterCondition.EndingWith;
+        filter2.Path = "Products.UnitPrice";
+        filter2.Value = "1";
+        tableElement.DataFilters.Add(filter2);
+
+        // Add table to dashboard
+        dashboard.Components.Add(tableElement);
+    }
+}
