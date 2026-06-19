@@ -4,12 +4,14 @@
 @using Stimulsoft.Report.Blazor
 @using Stimulsoft.Report.Web
 @using Stimulsoft.Dashboard
-@inject IJSRuntime JSRuntime 
+@inject IJSRuntime JSRuntime
 
 <div align="center">
-    <button @onclick="ExportDashboardAsHTML">Export as HTML</button> &nbsp; <button @onclick="ExportDashboardAsPDF">Export as PDF</button> &nbsp; <button @onclick="PrintDashboard">Print</button>
+    <button @onclick="ExportDashboardAsHTML">Export as HTML</button> &nbsp; <button
+    @onclick="ExportDashboardAsPDF">Export as PDF</button> &nbsp; <button @onclick="PrintDashboard">Print</button>
     <br /><br />
-    <input id="responseAsFile" type="checkbox" @bind="responseAsFile"><label for="responseAsFile">Response as File</label>
+    <input id="responseAsFile" type="checkbox" @bind="responseAsFile"><label for="responseAsFile">Response as
+    File</label>
     <br /><br />
     <p>@message</p>
 </div>
@@ -26,12 +28,12 @@
 
         // How to activate
         //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
-        //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
+        //Stimulsoft.Base.StiLicense.LoadFromFile("stimulsoft.key");
         //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
 
         // Initialize JSRuntime service, only needed for response as file
         StiBlazorHelper.Initialize(JSRuntime);
-    
+
     }
 
     private void ExportDashboardAsHTML()
